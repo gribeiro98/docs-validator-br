@@ -25,11 +25,7 @@ export function isValidCpf(value: string): boolean {
 
   const cpfCompare = baseCpfWithFirstDigit + secondDigit;
 
-  if (value === cpfCompare) {
-    return true;
-  }
-
-  return false;
+  return value === cpfCompare;
 }
 
 function calculateFirstDigit(baseCpf: string): number {
