@@ -1,16 +1,16 @@
 {
   "name": "docs-validator-br",
   "version": "1.0.0",
-  "description": "",
+  "description": "Validações de diversos tipos de dados e documentos brasileiros.",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["validator", "validação", "cep", "email", "cpf", "cnpj", "ie"],
+  "author": "Gabriel Ribeiro",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^28.1.3",
     "jest": "^28.1.1",
