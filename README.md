@@ -43,9 +43,9 @@ isValidEmail('teste@teste.com');
 import { isValidCep } from 'docs-validator-br';
 // const  { isValidCep } from 'docs-validator-br';
 
-const isValid = isValidCep('86702210'); 
-const isValid = isValidCep('86702-210'); 
-const isValid = isValidCep('86.702-210'); 
+isValidCep('86702210'); 
+isValidCep('86702-210'); 
+isValidCep('86.702-210'); 
 ```
 
 ## License
