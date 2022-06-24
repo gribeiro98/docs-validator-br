@@ -13,7 +13,7 @@ Validações de diversos tipos de dados e documentos brasileiros.
 Instalação via npm.
 
 ```sh
-npm i docs-validador-br
+npm i docs-validator-br
 ```
 
 ## Como utilizar
