@@ -34,7 +34,7 @@ isValidCpf('012.345.678-90');
 import { isValidEmail } from 'docs-validator-br';
 // const { isValidEmail } from 'docs-validator-br';
 
-const isValid = isValidEmail('teste@teste.com'); 
+isValidEmail('teste@teste.com'); 
 ```
 
 ### Validar CEP
