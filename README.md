@@ -22,7 +22,7 @@ npm i docs-validador-br
 
 ```sh
 import { isValidCpf } from 'docs-validator-br';
-const { isValidCpf } from 'dcos-validator-br';
+const  { isValidCpf } from 'dcos-validator-br';
 
 const isValid = isValidCpf('01234567890');
 const isValid = isValidCpf('012.345.678-90');
@@ -32,7 +32,7 @@ const isValid = isValidCpf('012.345.678-90');
 
 ```sh
 import { isValidEmail } from 'docs-validator-br';
-const { isValidEmail } from 'dcos-validator-br';
+const  { isValidEmail } from 'dcos-validator-br';
 
 const isValid = isValidEmail('teste@teste.com'); 
 ```
@@ -41,7 +41,7 @@ const isValid = isValidEmail('teste@teste.com');
 
 ```sh
 import { isValidCep } from 'docs-validator-br';
-const { isValidCep } from 'dcos-validator-br';
+const  { isValidCep } from 'dcos-validator-br';
 
 const isValid = isValidCep('86702210'); 
 const isValid = isValidCep('86702-210'); 
