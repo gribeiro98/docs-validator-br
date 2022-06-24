@@ -28,7 +28,7 @@ export function isValidCpf(value: string): boolean {
   return value === cpfCompare;
 }
 
-function calculateFirstDigit(baseCpf: string): number {
+export function calculateFirstDigit(baseCpf: string): number {
   const digitsCpfBase = baseCpf.split('');
   let sumDigits = 0;
 
@@ -43,7 +43,7 @@ function calculateFirstDigit(baseCpf: string): number {
   return (11 - mod11(sumDigits)) >= 10 ? 0 : (11 - mod11(sumDigits));
 }
 
-function calculateSecondDigit(baseCpf: string): number {
+export function calculateSecondDigit(baseCpf: string): number {
   const digitsCpfBase = baseCpf.split('');
   let sumDigits = 0
   
