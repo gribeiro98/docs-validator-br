@@ -1,4 +1,4 @@
-# Docs Validador BR
+# Docs Validator BR
 
 Validações de diversos tipos de dados e documentos brasileiros.
 
