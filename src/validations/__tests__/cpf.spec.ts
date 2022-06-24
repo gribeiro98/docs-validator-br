@@ -29,4 +29,8 @@ describe('cpf', () => {
   it('should return true when cpf is valid', () => {
     expect(isValidCpf('01234567890')).toBe(true);
   });
+
+  it('should return true when cpf is valid with mask', () => {
+    expect(isValidCpf('012.345.678-90')).toBe(true);
+  });
 });

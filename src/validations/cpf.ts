@@ -1,31 +1,32 @@
 import { mod11 } from '../utils/mod11';
 
 export function isValidCpf(value: string): boolean {
+  const cpfClean = value.replace(/\D/g, '');
   const sizeCpf = 11;
 
-  if (value.length !== 11) return false;
+  if (cpfClean.length !== 11) return false;
 
   if (
-      value === '00000000000' || 
-      value === '11111111111' ||
-      value === '22222222222' ||
-      value === '33333333333' ||
-      value === '44444444444' ||
-      value === '55555555555' ||
-      value === '66666666666' ||
-      value === '77777777777' ||
-      value === '88888888888' ||
-      value === '99999999999' 
+    cpfClean === '00000000000' || 
+    cpfClean === '11111111111' ||
+    cpfClean === '22222222222' ||
+    cpfClean === '33333333333' ||
+    cpfClean === '44444444444' ||
+    cpfClean === '55555555555' ||
+    cpfClean === '66666666666' ||
+    cpfClean === '77777777777' ||
+    cpfClean === '88888888888' ||
+    cpfClean === '99999999999' 
     ) return false;
 
-  const baseCpf = value.substring(0, 9);
+  const baseCpf = cpfClean.substring(0, 9);
   const firstDigit = calculateFirstDigit(baseCpf);
   const baseCpfWithFirstDigit = baseCpf.concat(String(firstDigit));
   const secondDigit = calculateSecondDigit(baseCpfWithFirstDigit);
 
   const cpfCompare = baseCpfWithFirstDigit + secondDigit;
 
-  return value === cpfCompare;
+  return cpfClean === cpfCompare;
 }
 
 export function calculateFirstDigit(baseCpf: string): number {
