@@ -31,7 +31,7 @@ export function calculateFirstDigit(baseCpf: string): number {
     i--;
   });
 
-  return (11 - mod11(sumDigits)) >= 10 ? 0 : (11 - mod11(sumDigits));
+  return (mod11(sumDigits)) < 2 ? 0 : (11 - mod11(sumDigits));
 }
 
 export function calculateSecondDigit(baseCpf: string): number {
@@ -46,5 +46,5 @@ export function calculateSecondDigit(baseCpf: string): number {
     i--;
   });
 
-  return (11 - mod11(sumDigits)) >= 10 ? 0 : (11 - mod11(sumDigits));
+  return (mod11(sumDigits)) < 2 ? 0 : (11 - mod11(sumDigits));
 }
