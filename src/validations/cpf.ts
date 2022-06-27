@@ -1,4 +1,5 @@
 import { mod11 } from '../utils/mod11';
+import { isRepeated } from '../utils/isRepetead';
 
 export function isValidCpf(value: string): boolean {
   const cpfClean = value.replace(/\D/g, '');
@@ -6,18 +7,7 @@ export function isValidCpf(value: string): boolean {
 
   if (cpfClean.length !== 11) return false;
 
-  if (
-    cpfClean === '00000000000' || 
-    cpfClean === '11111111111' ||
-    cpfClean === '22222222222' ||
-    cpfClean === '33333333333' ||
-    cpfClean === '44444444444' ||
-    cpfClean === '55555555555' ||
-    cpfClean === '66666666666' ||
-    cpfClean === '77777777777' ||
-    cpfClean === '88888888888' ||
-    cpfClean === '99999999999' 
-    ) return false;
+  if (isRepeated(cpfClean)) return false;
 
   const baseCpf = cpfClean.substring(0, 9);
   const firstDigit = calculateFirstDigit(baseCpf);
