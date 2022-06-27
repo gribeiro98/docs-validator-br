@@ -27,6 +27,15 @@ import { isValidCpf } from 'docs-validator-br';
 isValidCpf('01234567890');
 isValidCpf('012.345.678-90');
 ```
+### Validar CNPJ
+
+```sh
+import { isValidCnpj } from 'docs-validator-br';
+// const { isValidCnpj } from 'docs-validator-br';
+
+isValidCnpj('59225871000156');
+isValidCnpj('59.225.871/0001-56');
+```
 
 ### Validar E-mail
 
