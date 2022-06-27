@@ -14,8 +14,8 @@ export function isValidCnpj(value: string): boolean {
   const baseCnpjWithFirtDigit = baseCnpj + firstDigit;
   const secondDigit = calculateDigit(baseCnpjWithFirtDigit);
   const cnpjCompare = baseCnpjWithFirtDigit + secondDigit;
-  
-  return true;
+
+  return cnpjCompare === cnpjClean;
 }
 
 export function calculateDigit(baseCnpj: string): number {
