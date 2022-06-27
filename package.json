@@ -1,6 +1,6 @@
 {
   "name": "docs-validator-br",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validações de diversos tipos de dados e documentos brasileiros.",
   "main": "dist/index.js",
   "scripts": {
